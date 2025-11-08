@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio 3D</title>
+    <style>
+        body {
+            margin: 0;
+            background: #0c0c0c;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #000;
+            border-bottom: 1px solid #550000;
+        }
+
+        header h1 {
+            color: #ff2a2a;
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        nav a {
+            color: #e0e0e0;
+            margin-left: 25px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #ff2a2a;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #ff2a2a;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .gallery {
+            padding: 60px 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #111;
+            border: 1px solid #550000;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform .2s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            border-color: #ff2a2a;
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+        }
+
+        .card-info {
+            padding: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-top: 1px solid #550000;
+            color: #666;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff2a2a;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 25px;
+            font-size: 1.1rem;
+        }
+
+        a.button:hover {
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SeuNome 3D</h1>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Portfólio</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Modelagens 3D para Jogos</h2>
+    <p>Personagens, armas, props e criaturas criadas com foco em performance e qualidade visual.</p>
+    <a href="#" class="button">Ver Portfólio</a>
+</section>
+
+<section class="gallery">
+    <div class="card">
+        <img src="modelo1.jpg" alt="Modelo 3D">
+        <div class="card-info">
+            Modelo 3D – Personagem Sci-Fi
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="modelo2.jpg" alt="Modelo 3D">
+        <div class="card-info">
+            Prop – Arma estilizada
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="modelo3.jpg" alt="Modelo 3D">
+        <div class="card-info">
+            Criatura – Boss Demoníaco
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 SeuNome. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
