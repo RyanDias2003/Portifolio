@@ -1,157 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio 3D</title>
-    <style>
-        body {
-            margin: 0;
-            background: #0c0c0c;
-            color: #e0e0e0;
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            background: #000;
-            border-bottom: 1px solid #550000;
-        }
-
-        header h1 {
-            color: #ff2a2a;
-            margin: 0;
-            font-size: 1.8rem;
-        }
-
-        nav a {
-            color: #e0e0e0;
-            margin-left: 25px;
-            text-decoration: none;
-            font-size: 1rem;
-        }
-
-        nav a:hover {
-            color: #ff2a2a;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 120px 20px;
-        }
-
-        .hero h2 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            color: #ff2a2a;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .gallery {
-            padding: 60px 40px;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background: #111;
-            border: 1px solid #550000;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform .2s;
-        }
-
-        .card:hover {
-            transform: scale(1.03);
-            border-color: #ff2a2a;
-        }
-
-        .card img {
-            width: 100%;
-            display: block;
-        }
-
-        .card-info {
-            padding: 15px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 60px;
-            border-top: 1px solid #550000;
-            color: #666;
-        }
-
-        a.button {
-            display: inline-block;
-            padding: 12px 24px;
-            background: #ff2a2a;
-            color: #fff;
-            border-radius: 4px;
-            text-decoration: none;
-            margin-top: 25px;
-            font-size: 1.1rem;
-        }
-
-        a.button:hover {
-            background: #cc0000;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Portfólio</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif; }
+body { background:#0d0d0d; color:#e5e5e5; }
+.header { padding:20px 40px; background:#111; position:sticky; top:0; box-shadow:0 4px 12px rgba(0,0,0,0.4); }
+.nav { display:flex; gap:30px; }
+.nav a { text-decoration:none; color:#d3d3d3; transition:.3s; }
+.nav a:hover { color:white; }
+.home { display:flex; justify-content:center; padding:80px 20px; }
+.intro-card { background:#1a1a1a; padding:60px; border-radius:16px; text-align:center; box-shadow:0 8px 20px rgba(0,0,0,0.5); }
+</style>
 </head>
 <body>
-
-<header>
-    <h1>SeuNome 3D</h1>
-    <nav>
-        <a href="#">Início</a>
-        <a href="#">Portfólio</a>
-        <a href="#">Sobre</a>
-        <a href="#">Contato</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <h2>Modelagens 3D para Jogos</h2>
-    <p>Personagens, armas, props e criaturas criadas com foco em performance e qualidade visual.</p>
-    <a href="#" class="button">Ver Portfólio</a>
-</section>
-
-<section class="gallery">
-    <div class="card">
-        <img src="modelo1.jpg" alt="Modelo 3D">
-        <div class="card-info">
-            Modelo 3D – Personagem Sci-Fi
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="modelo2.jpg" alt="Modelo 3D">
-        <div class="card-info">
-            Prop – Arma estilizada
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="modelo3.jpg" alt="Modelo 3D">
-        <div class="card-info">
-            Criatura – Boss Demoníaco
-        </div>
-    </div>
-</section>
-
-<footer>
-    © 2025 SeuNome. Todos os direitos reservados.
-</footer>
-
+<header class="header"><nav class="nav"><a href="index.html">Home</a><a href="sobre.html">Sobre</a><a href="catalogo.html">Catálogo</a><a href="contato.html">Contato</a></nav></header>
+<main class="home"><section class="intro-card">
+<h1>Bem-vindo ao meu Portfólio</h1>
+<p>Explore meus projetos e minha trajetória criativa.</p>
+<div class="social-home" style="margin-top:25px; line-height:1.6; display:flex; flex-direction:column; gap:10px;">
+<a href="https://www.threads.com/@ryandias2003?xmt=AQF0fmfmkC2oJz8hZK7z24nj7ocK9eCHsLG8x-4ifXRk5Oo" class="icon-link">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/></svg>
+Instagram
+</a>
+<a href="https://www.artstation.com/ryandias20033" class="icon-link">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zm3.5 6h-7c-.3 0-.5.2-.5.5v7c0 .3.2.5.5.5h7c.3 0 .5-.2.5-.5v-7c0-.3-.2-.5-.5-.5z"/></svg>
+ArtStation
+</a>
+<a href="https://www.linkedin.com/in/ryan-dias-de-oliveira-482b74185" class="icon-link">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zm3.5 6h-7c-.3 0-.5.2-.5.5v7c0 .3.2.5.5.5h7c.3 0 .5-.2.5-.5v-7c0-.3-.2-.5-.5-.5z"/></svg>
+LinkedIn
+</a>
+</div>
+</section></main>
 </body>
 </html>
