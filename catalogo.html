@@ -13,8 +13,67 @@ h1 { text-align:center; margin-bottom:40px; }
 .grid-projetos { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; }
 .projeto-card { background:#1a1a1a; padding:30px; border-radius:16px; box-shadow:0 8px 20px rgba(0,0,0,0.5); transition:.3s; }
 .projeto-card:hover { transform:translateY(-5px); box-shadow:0 12px 25px rgba(0,0,0,0.6); }
+.projeto-card img {
+    width: 100%;
+    height: 400px;        /* tamanho fixo para padronizar */
+    object-fit: cover;    /* mantém qualidade sem distorcer */
+    border-radius: 12px;  /* bordas arredondadas */
+    margin: 20px 0;       /* espaço entre título e descrição */
+    display: block;
+}
+
 </style></head>
 <body>
 <header class="header"><nav class="nav"><a href="index.html">Home</a><a href="sobre.html">Sobre</a><a href="catalogo.html">Catálogo</a><a href="contato.html">Contato</a></nav></header>
-<main class="catalogo"><h1>Projetos</h1><section class="grid-projetos"><div class="projeto-card"><h2>Projeto A</h2><p>Descrição curta.</p></div><div class="projeto-card"><h2>Projeto B</h2><p>Descrição curta.</p></div></section></main>
+<main class="catalogo">
+    <h1>Projetos</h1><section class="grid-projetos">
+        
+    <div class="projeto-card">
+        <h2>Trainees-Life</h2>
+        <img src="e:\Portifólio\Trainee's Life.png" alt="Imagem do Projeto A">
+        <p>Jogo desenvolvido para o Projeto Integrador do 1º Semestre da faculdade de jogos Digitais. Modelo 2D Pixel-art, 3 Fases. Desenvolvido em parceria com Leonardo Marques, João Pedro e Fernando Hideki</p>
+        <p> Disponivel no Itch.Io</p>
+        <a href="https://arezoel.itch.io/trainees-life" class="icon-link">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zm3.5 6h-7c-.3 0-.5.2-.5.5v7c0 .3.2.5.5.5h7c.3 0 .5-.2.5-.5v-7c0-.3-.2-.5-.5-.5z"/></svg>
+        Itch.Io
+        </a>
+    </div>
+
+    <div class="projeto-card">
+        <h2>The Last Light</h2>
+        <img src="e:\Portifólio\The Last Light.png" alt="Imagem do Projeto A">
+        <p>Jogo desenvolvido para o Projeto Integrador do 2º Semestre da faculdade de jogos Digitais. Modelo 2D Vetorizado, Click-Defense. Desenvolvido em parceria com Leonardo Marques, João Pedro e Fernando Hideki</p>
+        <p> Disponivel no Itch.Io</p>
+        <a href="https://arezoel.itch.io/the-last-light" class="icon-link">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zm3.5 6h-7c-.3 0-.5.2-.5.5v7c0 .3.2.5.5.5h7c.3 0 .5-.2.5-.5v-7c0-.3-.2-.5-.5-.5z"/></svg>
+        Itch.Io
+        </a>
+    </div>
+
+    <div class="projeto-card">
+        <h2>The Barkventures Of Lakshmi: where's Pepito ?</h2>
+        <img src="e:\Portifólio\The Barkventures of Lakshmi.jpg" alt="Imagem do Projeto A">
+        <p>Jogo desenvolvido para o Projeto Integrador do 3º Semestre da faculdade de jogos Digitais. Modelo 3D low-Poly, Semi-aberto. Desenvolvido em parceria com Leonardo Marques, Daniel Gonçalves e Gustavo Ribeiro</p>
+        <p> Disponivel no Itch.Io</p>
+        <a href="https://arezoel.itch.io/the-barkventures-of-lakshmi-wheres-pepito" class="icon-link">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zm3.5 6h-7c-.3 0-.5.2-.5.5v7c0 .3.2.5.5.5h7c.3 0 .5-.2.5-.5v-7c0-.3-.2-.5-.5-.5z"/></svg>
+        Itch.Io
+        </a>
+    </div>
+
+    <div class="projeto-card">
+        <h2>Jogador Nº 47</h2>
+        <img src="e:\Portifólio\Jogador Nº47.png" alt="Imagem do Projeto A">
+        <p>Jogo desenvolvido para o Projeto Integrador do 4º Semestre da faculdade de jogos Digitais. Modelo 3D High-Poly, Semi-aberto. Desenvolvido em parceria com Leonardo Marques, Guilherme Santos e Mia Victória</p>
+        <p> Disponivel no Itch.Io</p>
+        <a href="https://arezoel.itch.io/the-barkventures-of-lakshmi-wheres-pepito" class="icon-link">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zm3.5 6h-7c-.3 0-.5.2-.5.5v7c0 .3.2.5.5.5h7c.3 0 .5-.2.5-.5v-7c0-.3-.2-.5-.5-.5z"/></svg>
+        Itch.Io
+        </a>
+    </div>
+
+
+
+    
+    </section></main>
 </body></html>
