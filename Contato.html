@@ -29,25 +29,24 @@ button:hover { background:#666; }
     <!-- Desativa CAPTCHA -->
     <input type="hidden" name="_captcha" value="false">
 
-    <!-- Página de agradecimento após enviar (opcional) -->
-    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+    <!-- Redirecionamento após enviar -->
+    <input type="hidden" name="_next" value="https://seusite.com/sucesso.html">
 
-    <!-- Assunto do email recebido -->
-    <input type="hidden" name="_subject" value="Nova mensagem do Portfólio!">
-
-    <!-- Mensagem automática opcional -->
-    <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato! Responderei em breve.">
+    <!-- Assunto do email -->
+    <input type="hidden" name="_subject" value="Nova mensagem do portfólio!">
 
     <label>Seu Nome:</label>
-    <input type="text" name="nome" required>
+    <input type="text" name="nome" placeholder="Seu nome" required>
 
     <label>Seu Email:</label>
-    <input type="email" name="email" required>
+    <input type="email" name="email" placeholder="Seu email" required>
 
     <label>Mensagem:</label>
-    <textarea name="mensagem" rows="5" required></textarea>
+    <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
 
     <button type="submit">Enviar</button>
 </form>
+
+
 
 </body></html>
